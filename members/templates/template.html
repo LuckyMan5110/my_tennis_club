@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<body>
+
+{% comment %} {% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+<p>In views.py you can see what the fruits variable looks like.</p> {% endcomment %}
+
+{% comment %} <h1>Hello {{ firstname }}, how are you?</h1> {% endcomment %}
+
+<ul>
+  {% for x in mymembers %}
+    <li>{{ x.firstname }}</li>
+  {% endfor %}
+</ul>
+{% include 'footer.html' %} 
+</body>
+</html>
